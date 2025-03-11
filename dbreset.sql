@@ -53,7 +53,7 @@ CREATE TABLE user (
 ;
 
 DROP INDEX IF EXISTS unique_username;
--- TODO: Create the unique_username index
+-- TODO: Create the unique_username  index
 CREATE UNIQUE INDEX unique_username ON user (username);
 
 INSERT INTO user (user_id, username, password_hash)
